@@ -1,0 +1,175 @@
+header nav {
+  background-color: gainsboro;
+  width: 99.9%;
+}
+
+header div li {
+  display: inline-block;
+  float: right;
+  padding: 6px;
+  margin: 2px 4px;
+  background-color: goldenrod;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 9px;
+}
+
+header form {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+header nav li {
+  font-weight: bold;
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 6px;
+  font-style: normal;
+  color: #003380;
+  background-color: goldenrod;
+  border: solid 1px yellowgreen;
+  border-radius: 9px;
+}
+
+.estiloanke {
+  color: goldenrod;
+  font-family: sans-serif;
+  font-size: 28px;
+}
+
+.estiloanke--h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.estiloanke--h2 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+h3 {
+  font-family: sans-serif;
+  letter-spacing: 1;
+  word-spacing: 4;
+  font-size: 18px;
+  line-height: 2;
+  font-style: oblique;
+}
+
+.sobrenosotros {
+  font-family: sans-serif;
+  letter-spacing: 1;
+  word-spacing: 4;
+  font-size: 16px;
+  line-height: 2;
+}
+
+section ul li {
+  font-family: serif;
+  letter-spacing: 1;
+  word-spacing: 2;
+  font-size: 18px;
+  line-height: 2;
+}
+
+img {
+  max-width: 100%;
+}
+
+.gallery {
+  background-color: burlywood;
+  padding: 80px 0;
+}
+
+.gallery img {
+  background-color: #ffffff;
+  padding: 15px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.indexproductos {
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1;
+  word-spacing: 2;
+  font-size: 18px;
+  line-height: 2;
+  font-style: italic;
+  color: green;
+  background-color: burlywood;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  position: relative;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.indexproductos--1 {
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.indexproductos--2 {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.footer div {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #e6cf06), color-stop(33%, #07e463));
+  background-image: linear-gradient(#e6cf06 33%, #07e463 33%);
+}
+
+.footer div {
+  text-align: center;
+  font-size: 15px;
+}
+
+section table {
+  text-align: center;
+  margin: auto auto;
+  border: blue 2px double;
+}
+
+#grilla {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "columna-llena columna-vacia";
+  gap: 7em;
+  background-color: antiquewhite;
+}
+
+div#columna-vacia {
+  grid-area: "columna-vacia";
+}
+
+div#columna-llena {
+  grid-area: "columna-llena";
+}
+
+.posicion {
+  padding: 20px;
+  margin: 1px;
+}
+
+.posicion--izq {
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.posicion--der {
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+/*# sourceMappingURL=estiloproyect.css.map */

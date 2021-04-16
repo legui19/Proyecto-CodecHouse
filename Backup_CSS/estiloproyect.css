@@ -1,0 +1,158 @@
+header nav{
+    background-color: gainsboro;
+    width: 99.9%;
+}
+
+header div li{
+    display: inline-block;
+    float: right;
+    padding: 6px;
+    margin: 2px 4px;
+    background-color: goldenrod; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    border-radius: 9px;  
+}
+header form{
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+header nav li{
+    font-weight: bold;
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 6px;
+    font-style: normal;
+    color: rgb(0, 51, 128);
+    background-color:goldenrod;
+    border: solid 1px yellowgreen;
+    border-radius: 9px;
+   }
+
+#estiloanke{
+    color: goldenrod;
+    font-family: sans-serif;
+    font-size: 28px;   
+}
+
+h1{
+    text-align: center;
+}
+
+.sobrenosotros{
+    font-family: sans-serif;
+    letter-spacing: 1;
+    word-spacing: 4;    
+    font-size: 16px;
+    line-height: 2;
+}
+
+h3 {
+    font-family: sans-serif;
+    letter-spacing: 1;
+    word-spacing: 4;
+    font-size: 18px;
+    line-height: 2;
+    font-style: oblique;
+    }
+
+section ul li{
+    font-family: serif;
+    letter-spacing: 1;
+    word-spacing: 2;
+    font-size: 18px;
+    line-height: 2;
+   }
+
+img{
+	max-width: 100%;
+}
+.gallery{
+	background-color: burlywood;
+	padding: 80px 0;
+}
+.gallery img{
+	background-color: #ffffff;
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+.indexproductos{
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1;
+    word-spacing: 2;
+    font-size: 18px;
+    line-height: 2;
+    font-style:italic;
+    color: green;
+    background-color: burlywood;
+    justify-self: center;
+    position: relative;
+    transition: 3s;    
+}
+
+.indexproductos1{
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1;
+    word-spacing: 2;
+    font-size: 18px;
+    line-height: 2;
+    font-style:italic;
+    color: green;
+    background-color: burlywood;
+    justify-self: center;
+    position: relative;
+}       
+#transform{
+    width: 600px;
+    height: 500px;
+    transform: translate(30px, 30px);
+    transition: 4s;
+}
+#transform1{
+    width: 400px;
+    height: 100px;
+    transform: translateX(300px);
+    transition: 4s;
+}
+
+footer{
+    background-image: linear-gradient(rgb(230, 207, 6) 33% , rgb(7, 228, 99) 33%)
+}
+
+#grilla{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "columna-llena columna-vacia";
+    gap: 7em;
+    background-color: antiquewhite; 
+}
+
+div#columna-vacia{
+    grid-area: "columna-vacia";
+}
+
+div#columna-llena{
+    grid-area: "columna-llena";
+}
+
+.posicion-izq{
+    justify-self: right;
+    padding: 20px;
+    margin: 1px;
+}
+.posicion-der{
+    justify-self: left;
+    padding: 20px;
+    margin: 1px;
+    
+}
+
+
