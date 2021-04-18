@@ -95,6 +95,10 @@ img {
   cursor: pointer;
 }
 
+#gallery-modal .modal-img{
+	width: 100%;
+}
+
 .indexproductos {
   font-family: sans-serif;
   font-weight: bold;
