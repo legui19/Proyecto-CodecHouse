@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/**GENERAL: En este archivo se modificaran estilos de letras, tamaños, otros**/
+
+/**ESTILOS DE LETRAS APLICADOS AL HEADER**/
+
+header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header div li {
+  font-weight: bold;
+}
+.estiloanke{
+  font-family: sans-serif;
+}
+.productoscenter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/**ESTILOS DE LETRAS APLICADOS AL MAIN**/
+
+.sobrenosotros{
+  font-family:'Abel', sans-serif;
+  letter-spacing: 1;
+  word-spacing: 4;
+}
+section ul li{
+  font-family: serif;
+  letter-spacing: 1;
+  word-spacing: 2;
+}
+.indexproductos{
+  font-family: sans-serif;
+  letter-spacing: 1;
+  word-spacing: 2;
+}
+
+/**ESTILOS DE LETRAS APLICADOS AL FOOTER**/
+
+footer h3{
+  font-family: sans-serif;
+  letter-spacing: 3;
+  word-spacing: 4;
+}

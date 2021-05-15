@@ -1,48 +1,56 @@
-$headerbg1: gainsboro;
-$headerbg2: goldenrod;
-$color1: yellowgreen;
-$color2:burlywood;
-$color3: antiquewhite;
+$header_bg1:#939b62;
+$header_bg2:goldenrod;
+$color_1:yellowgreen;
+$color_2: #ffd56b;
+$color_3:antiquewhite;
+$color_4:goldenrod;
+$color_5:black;
+$border_table_1:rgb(131, 131, 248);
+$footer_bg_g1:#90be6d;
 
-header nav{
-    background-color: $headerbg1;
+
+/**ESTILOS APLICADOS EN LA ETIQUETA HEADER**/
+header{
+    background-color:$header_bg1;
     width: 99.9%;
 }
 header div li{
     display: inline-block;
     float: right;
     padding: 6px;
-    margin: 2px 4px;
-    background-color:$headerbg2; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    border-radius: 9px;  
+    margin: 15px 8px;
+    background-color: $header_bg2;
+    border-radius: 12px;
 }
 header form{
     margin-left: 15px;
     margin-top: 20px;
     font-size: 18px;
-    font-family: sans-serif;
     font-weight: bold;
 }
-
 header nav li{
     font-weight: bold;
-    font-family: sans-serif;
     display: inline-block;
     padding: 6px;
     font-style: normal;
-    color: rgb(0, 51, 128);
-    background-color: $headerbg2;
-    border: solid 1px $color1;
+    color: rgb(0,51,128);
+    background-color: $header_bg2;
+    border: solid 1px $color_1;
     border-radius: 9px;
-   }
-
-.estiloanke{
-    color: $headerbg2;
-    font-family: sans-serif;
-    font-size: 28px;  
 }
 
+/**ESTILOS APLICADOS EN LA ETIQUETA MAIN**/
+main{
+    background-color: $color_2;
+    width: 99.9%;
+    margin: 0px;
+    padding: 15px;
+}
+
+.estiloanke{
+    color: $color_4;
+    font-size: 28px;
+}
 .estiloanke--h1{
     text-align: center;
     font-weight: bold;
@@ -54,109 +62,93 @@ header nav li{
     text-decoration: underline;
     font-style: italic;
 }
-
-h3 {
-    font-family: sans-serif;
-    letter-spacing: 1;
-    word-spacing: 4;
-    font-size: 18px;
-    line-height: 2;
-    font-style: oblique;
-    }
 .sobrenosotros{
-        font-family: sans-serif;
-        letter-spacing: 1;
-        word-spacing: 4;    
-        font-size: 16px;
-        line-height: 2;
-    }
-
+    font-size: 16px;
+    line-height: 2;
+}
 section ul li{
-    font-family: serif;
-    letter-spacing: 1;
-    word-spacing: 2;
     font-size: 18px;
     line-height: 2;
-   }
-
+}
 img{
-	max-width: 100%;
+    max-width: 100%;
 }
 .gallery{
-	background-color: $color2;
-	padding: 80px 0;
+    background-color: $color_2;
+    padding: 80px 0;
 }
 .gallery img{
-	background-color: #ffffff;
-	padding: 15px;
-	width: 100%;
-	box-shadow: 0 0 15px rgba(0,0,0,0.3);
-	cursor: pointer;
+    background-color: $color_3;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
 }
-
 .indexproductos{
-    font-family: sans-serif;
     font-weight: bold;
-    letter-spacing: 1;
-    word-spacing: 2;
     font-size: 18px;
     line-height: 2;
-    font-style:italic;
-    color: green;
-    background-color: $color2;
+    font-style: italic;
+    color: $color_5;
+    background-color: $color_2;
     justify-self: center;
-    position: relative;        
+    position: relative;
 }
-
 .centrar{
     text-align: center;
-}
-.indexproductos--1{
-    transition: 3s;
-}
-.indexproductos--2{
-    transition: none;   
+    font-family:'Oswald', sans-serif;
 }
 
-%footer{
-    background-image: linear-gradient(rgb(230, 207, 6) 33% , rgb(7, 228, 99) 33%)
-}
-.footer{
-    div{
-        @extend %footer;
-        text-align: center;
-        font-size: 15px
-    }
-}
-section{
-        table{
-        text-align: center;
-        margin: auto auto;
-        border: blue 2px double;
-        }
+section table{
+    text-align: center;
+    margin: auto auto;
+    border: $border_table_1 2px double;
 }
 
+/**FORMATO PARA ICONOS DE LA SECCION COMO COMPRAR**/
 #grilla{
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "columna-llena columna-vacia";
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "columna-llena columna-vacia";
     gap: 7em;
-    background-color: $color3; 
+    background-color: antiquewhite;
 }
+  
 div#columna-vacia{
     grid-area: "columna-vacia";
 }
-
+  
 div#columna-llena{
     grid-area: "columna-llena";
 }
-.posicion{ 
+.posicion{
     padding: 20px;
     margin: 1px;
 }
+  
 .posicion--izq{
-    justify-self: right;
+    -ms-grid-column-align: right;
+        justify-self: right;
 }
+  
 .posicion--der{
-    justify-self: left;    
+    -ms-grid-column-align: left;
+        justify-self: left;
+}
+
+/**ESTILOS APLICADOS EN LA ETIQUETA FOOTER*/
+.footer{
+    background-color: $footer_bg_g1 ;
+}
+
+footer h3{
+    font-size: 18px;
+    line-height: 2;
+    font-style: oblique;
+    font-weight: bold;
+}
+footer div{
+    text-align: center;
+    font-size: 15px;
 }
